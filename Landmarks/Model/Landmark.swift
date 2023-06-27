@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
+// Codable: makes it easier to move data between the structure and a data file.
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String

@@ -11,6 +11,7 @@ struct LandmarkDetail: View {
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
+                // to allow the map content to extend to the top edge of the screen
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
 
